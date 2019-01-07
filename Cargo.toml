@@ -1,0 +1,9 @@
+[package]
+name = "runiq"
+version = "0.1.0"
+authors = ["Camden Cheek <ccheek22@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+regex = "1.1.0"
+clap = "2.32.0"
