@@ -35,25 +35,6 @@ fn main() {
     };
 
 
-    let tester = match optional {
-        Some(a) => TypeA::new(a),
-        None => TypeB::new()
-    };
-
-    some_function(tester);
-
-    match optional {
-        Some(a) => {
-            let tester = TypeA::new(a);
-            some_function(tester);
-        },
-        None => {
-            let tester = TypeB::new();
-            some_function(tester);
-        }
-    }
-
-
 }
 
 fn filter_input<U,V>(stdin: &io::Stdin, stdout: &mut U, tester: &mut V)
